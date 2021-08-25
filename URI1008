@@ -1,0 +1,20 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1008 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int numero = ler.nextInt();
+		int horas = ler.nextInt();
+		double valorPorHora = ler.nextDouble();
+		
+		double total = valorPorHora * horas;
+		
+		System.out.println("NUMBER = " + numero);
+		System.out.println(String.format("SALARY = U$ %.2f ", total));
+
+	}
+
+}
