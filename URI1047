@@ -1,0 +1,29 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1047 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int initialHour;
+		int finalHour;
+		int initialMinute;
+		int finalMinute;
+		
+		initialHour = ler.nextInt();
+		initialMinute = ler.nextInt();
+		finalHour = ler.nextInt();
+		finalMinute = ler.nextInt();
+		
+		if (initialHour - finalHour == 0 && initialMinute - finalMinute == 0) {
+			System.out.println("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+		} else if (initialHour + 1 == finalHour && initialMinute < finalMinute) {
+			System.out.println("O JOGO DUROU 0 HORA(S) E " + (finalMinute - initialMinute) + " MINUTO(S)");
+			
+		}
+		
+		
+	}
+
+}
