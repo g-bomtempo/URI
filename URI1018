@@ -1,0 +1,28 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1018 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);		
+		int N = ler.nextInt();		
+		
+		int cem = N / 100;
+		int cinquenta = (N - (cem * 100)) / 50;
+		int vinte = (N - (cem * 100) - (cinquenta * 50)) / 20;
+		int dez = (N - (cem*100) - (cinquenta * 50) - (vinte * 20)) / 10;
+		int cinco = (N - (cem*100) - (cinquenta*50) - (vinte*20) - (dez*10)) / 5;
+		int dois = (N - (cem*100) - (cinquenta*50) - (vinte*20) - (dez*10) - (cinco*5)) / 2;
+		int um = (N - (cem*100) - (cinquenta*50) - (vinte*20) - (dez*10) - (cinco*5) - (dois*2))  / 1;
+		
+		System.out.println(N);
+		System.out.println(cem + " nota(s) de R$ 100,00");
+		System.out.println(cinquenta + " nota(s) de R$ 50,00");
+		System.out.println(vinte + " nota(s) de R$ 20,00");
+		System.out.println(dez + " nota(s) de R$ 10,00");
+		System.out.println(cinco + " nota(s) de R$ 5,00");
+		System.out.println(dois + " nota(s) de R$ 2,00");
+		System.out.println(um + " nota(s) de R$ 1,00");
+	}
+
+}
