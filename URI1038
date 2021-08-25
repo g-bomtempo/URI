@@ -1,0 +1,25 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1038 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int X = ler.nextInt();
+		double Y = ler.nextDouble();
+		
+		if (X == 1) {
+			System.out.println(String.format("Total: R$ %.2f",(4*Y)));
+		} else if (X==2) {
+			System.out.println(String.format("Total: R$ %.2f",(4.5*Y)));
+		} else if (X==3) {
+			System.out.println(String.format("Total: R$ %.2f",(5*Y)));
+		} else if (X==4) {
+			System.out.println(String.format("Total: R$ %.2f",(2*Y)));
+		} else if (X==5) {
+			System.out.println(String.format("Total: R$ %.2f",(1.5*Y)));
+		}
+	}
+
+}
