@@ -1,0 +1,20 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1020 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int age = ler.nextInt();
+		
+		int year = age / 365;
+		int month = (age - (year*365)) / 30; 
+		int days = (age - (year*365) - (month*30));
+		
+		System.out.println(year + " ano(s)");
+		System.out.println(month + " mes(es)");
+		System.out.println(days + " dia(s)");
+
+	}
+
+}
