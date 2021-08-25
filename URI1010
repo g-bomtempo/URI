@@ -1,0 +1,21 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1010 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int codigo1 = ler.nextInt();
+		int qtde1 = ler.nextInt();
+		double price1 = ler.nextDouble();
+		int codigo2 = ler.nextInt();
+		int qtde2 = ler.nextInt();
+		double price2 = ler.nextDouble();
+		double total = (qtde1 * price1) + (qtde2 * price2);
+		
+		System.out.println(String.format("VALOR A PAGAR: R$ %.2f", total));
+
+	}
+
+}
