@@ -1,0 +1,25 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1046 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int A = ler.nextInt();
+		int B = ler.nextInt();
+		int total;
+		
+		if (A == B) {
+			System.out.println("O JOGO DUROU 24 HORAS(S)");
+		} else if (A > 12) {
+			total = (24 - A) + B;
+			System.out.println("O JOGO DUROU " + total + " HORA(S)");
+		} else if (A <= 12) {
+			total = B - A;
+			System.out.println("O JOGO DUROU " + total + " HORA(S)");
+		}			
+						
+	}
+
+}
