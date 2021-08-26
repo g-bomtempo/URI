@@ -1,0 +1,48 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1048 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		double salary = ler.nextDouble();
+		double newSalary;
+		double reajuste;
+		
+		if (salary <= 400) {
+			newSalary = salary * 1.15;
+			reajuste = newSalary - salary;			
+			System.out.println(String.format("Novo salario: %.2f", newSalary));
+			System.out.println(String.format("Reajuste ganho: %.2f", reajuste));
+			System.out.println("Em percentual: 15 %");
+		} else if (salary <= 800) {
+			newSalary = salary * 1.12;
+			reajuste = newSalary - salary;			
+			System.out.println(String.format("Novo salario: %.2f", newSalary));
+			System.out.println(String.format("Reajuste ganho: %.2f", reajuste));
+			System.out.println("Em percentual: 12 %");			
+		} else if (salary <= 1200) {
+			newSalary = salary * 1.1;
+			reajuste = newSalary - salary;			
+			System.out.println(String.format("Novo salario: %.2f", newSalary));
+			System.out.println(String.format("Reajuste ganho: %.2f", reajuste));
+			System.out.println("Em percentual: 10 %");
+		} else if (salary <= 2000) {
+			newSalary = salary * 1.07;
+			reajuste = newSalary - salary;			
+			System.out.println(String.format("Novo salario: %.2f", newSalary));
+			System.out.println(String.format("Reajuste ganho: %.2f", reajuste));
+			System.out.println("Em percentual: 7 %");
+		} else if (salary > 2000) {
+			newSalary = salary * 1.04;
+			reajuste = newSalary - salary;			
+			System.out.println(String.format("Novo salario: %.2f", newSalary));
+			System.out.println(String.format("Reajuste ganho: %.2f", reajuste));
+			System.out.println("Em percentual: 4 %");
+		}
+		
+
+	}
+
+}
