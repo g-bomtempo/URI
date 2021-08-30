@@ -1,0 +1,28 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1051 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		
+		double salary = ler.nextDouble();
+		double imposto;
+		
+		if (salary <= 2000) {
+			System.out.println("Isento");
+		} else if ((salary - 2000) >= 0.009 && (3000 - salary) >= 0) {
+			imposto = (salary - 2000) * 0.08;
+			System.out.println(String.format("R$ %.2f", imposto));
+		} else if ((salary - 3000) >= 0.009 && (4500 - salary) >= 0) {
+			imposto = ((salary - 3000) * 0.18) + 80;
+			System.out.println(String.format("R$ %.2f", imposto));
+		} else if ((4500 - salary) < 0) {
+			imposto = ((salary - 4500) * 0.28) + 80 + 270;
+			System.out.println(String.format("R$ %.2f", imposto));
+		}		
+
+	}
+
+}
