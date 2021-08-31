@@ -1,0 +1,26 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1064 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int contador = 0;
+		double soma = 0;
+		
+		
+		for (int x = 0; x < 6; x++) {
+			double leitura = ler.nextDouble();
+			if (leitura > 0) {
+				contador++;
+				soma = soma + leitura;
+			}
+		}
+		double media = soma / contador;
+		System.out.println(contador + " valores positivos");
+		System.out.println(String.format("%.1f", media));
+		
+
+	}
+
+}
