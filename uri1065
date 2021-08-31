@@ -1,0 +1,19 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1065 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int contador = 0;
+		
+		for (int i = 0; i < 5; i++) {
+			int leitura = ler.nextInt();
+			if (leitura % 2 == 0) {
+				contador++;
+			}
+		}
+		System.out.println(contador + " valores pares");
+	}
+
+}
