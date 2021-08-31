@@ -1,0 +1,24 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1072 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int contador = 0;
+		int contador1 = 0;
+		
+		int qtde = ler.nextInt();
+		
+		for (int i = 1; i <= qtde; i++) {
+			int leitura = ler.nextInt();
+			if (leitura <= 20 && leitura >= 10) {
+				contador++;
+			} else {
+				contador1++;
+			}
+		}
+		System.out.println(contador + " in");
+		System.out.println(contador1 + " out");
+	}
+}
