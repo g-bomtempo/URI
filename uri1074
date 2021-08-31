@@ -1,0 +1,29 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1074 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int qtde = ler.nextInt();
+		
+		for (int i = 1; i<= qtde; i++) {
+			int leitura = ler.nextInt();
+			
+			if (leitura == 0) {
+				System.out.println("NULL");
+			} if (leitura > 0 && leitura % 2 == 0) {
+				System.out.println("EVEN POSITIVE");
+			} if (leitura > 0 && leitura % 2 != 0) {
+				System.out.println("ODD POSITIVE");
+			} if (leitura < 0 && leitura % 2 == 0) {
+				System.out.println("EVEN NEGATIVE");
+			} if (leitura < 0 && leitura %2 != 0) {
+				System.out.println("ODD NEGATIVE");
+			}
+		}
+		
+	}
+
+}
