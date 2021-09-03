@@ -1,0 +1,26 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1117 {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		
+		int contador = 0;
+		double soma = 0;
+		
+		while (contador != 2) {			
+			double nota = leitor.nextDouble();
+			
+			if (nota < 0 || nota > 10) {
+				System.out.println("nota invalida");
+			} else {
+				soma = soma + nota;
+				contador++;
+			}
+		}
+		System.out.println(String.format("media = %.2f", soma / 2));
+
+	}
+
+}
