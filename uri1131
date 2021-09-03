@@ -1,0 +1,50 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1131 {
+
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);	
+		
+		int vitoriaInter = 0;
+		int vitoriaGremio = 0;
+		int empate = 0;
+		int contador = 1;
+		
+		while (true) {
+			
+			int partidaInter = leitor.nextInt();
+			int partidaGremio = leitor.nextInt();
+			
+			if (partidaInter > partidaGremio) {
+				vitoriaInter++;				
+			} if (partidaInter < partidaGremio) {
+				vitoriaGremio++;				
+			} if (partidaInter == partidaGremio) {
+				empate++;				
+			}			
+			
+			System.out.println("Novo grenal (1-sim 2-nao)");
+			int flag = leitor.nextInt();
+			if (flag == 2) {
+				System.out.println(contador + " grenais");
+				System.out.println("Inter:" + vitoriaInter);
+				System.out.println("Gremio:" + vitoriaGremio);
+				System.out.println("Empates:" + empate);
+				if (vitoriaInter > vitoriaGremio) {
+					System.out.println("Inter venceu mais");
+				} else if (vitoriaInter < vitoriaGremio) {
+					System.out.println("Gremio venceu mais");
+				} else {
+					System.out.println("Não houve vencedor");
+				}
+				break;			
+			}
+			else {
+				contador++;
+			}
+		}
+
+	}
+
+}
