@@ -1,0 +1,27 @@
+package uberhub;
+
+import java.util.Scanner;
+
+public class uri1154 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double soma = 0;
+		int contador = 0;
+		
+		while (true) {
+			int age = input.nextInt();
+			
+			if (age < 0) {
+				break;
+			} else {
+				soma = soma + age;
+				contador++;
+			}
+			
+		}
+		
+		System.out.println(String.format("%.2f", soma / contador));
+	}
+
+}
