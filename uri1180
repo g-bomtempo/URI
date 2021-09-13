@@ -1,0 +1,30 @@
+package uberhub;
+import java.util.Scanner;
+
+public class uri1180 {
+
+	public static void main(String[] args) {
+		 Scanner input = new Scanner(System.in);
+		 
+		 int N = input.nextInt();
+		 int menor = 1000;
+		 int posicaoMenor = 0;
+		 
+		 for (int i = 0; i < N; i++) {
+			 int numero = input.nextInt();
+			 
+			 if (numero < menor) {
+				 menor = numero;
+				 posicaoMenor = i;
+			 } else if (numero == menor) {
+				 posicaoMenor = i;
+			 }
+			 
+		 }
+		 
+		 System.out.println("Menor valor: " + menor);
+		 System.out.println("Posicao: " + posicaoMenor);
+
+	}
+
+}
